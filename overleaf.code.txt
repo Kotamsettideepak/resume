@@ -1,0 +1,335 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{parskip} 
+\usepackage{hologo}
+\usepackage{fontspec}
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9, top=.4in, bottom=.4in]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.42\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{1pt}{2pt}{2pt}
+
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\color[HTML]{000000}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+\usepackage{times} % Times New Roman font
+
+% For underline
+\usepackage[normalem]{ulem}
+
+\setmainfont{Times New Roman}  % Set it to Times New Roman
+\fontsize{10.1pt}{12.1pt}\selectfont % Increase the font size by 2pt
+
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty} 
+
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\color[HTML]{000000} \Huge{DEEPAK KOTAMSETTI} \\[6pt]
+\\
+\textcolor[HTML]{003366}{\underline{\href{mailto:deepakkotamsetti16@gmail.com}{\raisebox{-0.05\height}{\faEnvelope} deepakkotamsetti16@gmail.com}}} $|$ 
+\textcolor[HTML]{003366}{\href{tel:+916304838548}{\raisebox{-0.05\height}{\faMobile} +91 6304838548}} $|$ 
+\textcolor[HTML]{003366}{\underline{\href{https://www.linkedin.com/in/deepak-kotamsetti/}{\raisebox{-0.05\height}{\faLinkedin} LinkedIn/}}}
+\end{tabularx}
+
+
+
+
+% Education
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+\textcolor{000000}{\textbf{Aditya Engineering College}} & \textcolor{003366}{September 2021 - April 2025} \\
+\textcolor{000000}{B.Tech in Electronics and Communication} & \textcolor{000000}{\textit{\textbf{CGPA: 7.73}}} \\
+\multicolumn{2}{@{}l}{\textcolor{000000}{\textit{Relevant Courses: Java, Python, Data Structures and Algorithms, DBMS}}} \\[0.5em]
+\textcolor{000000}{\textbf{Sasi Junior College}} & \textcolor{003366}{June 2018 - March 2020} \\
+\textcolor{000000}{Mathematics, Physics \& Chemistry} & \textcolor{000000}{\textit{\textbf{CGPA: 9.17}}} \\
+\end{tabularx}
+
+
+% SKills
+
+\section{Skills}
+\vspace{0.15cm}
+
+\color[HTML]{003366}\textbf{Programming Languages:}  
+\color[HTML]{000000} \hspace*{3ex} 
+Java, JavaScript, Python, Ruby, HTML5, CSS3  
+
+\color[HTML]{003366}\textbf{Core Concepts:}  
+\color[HTML]{000000} \hspace*{2ex} 
+Data Structures and Algorithms (DSA), Object-Oriented Programming (OOP), Database Management Systems (DBMS), Full-Stack Web Development  
+
+\color[HTML]{003366}\textbf{AI \& Agentic AI:}  
+\color[HTML]{000000} \hspace*{1.4ex} 
+LangChain, LangGraph, LangSmith, OpenAI APIs, RAG Pipelines
+
+\color[HTML]{003366}\textbf{Frameworks \& Libraries:}  
+\color[HTML]{000000} \hspace*{1.4ex} 
+React.js, Node.js, Express.js, Spring Boot, Ruby on Rails, Servlet, JSP  
+
+\color[HTML]{003366}\textbf{Databases:}  
+\color[HTML]{000000} \hspace*{1.4ex} 
+MySQL, MongoDB, Postgres, Vector Databases
+
+\color[HTML]{003366}\textbf{Development Tools:}  
+\color[HTML]{000000} \hspace*{1.4ex} 
+Visual Studio Code (VS Code), Postman, Git, GitHub  
+
+\color[HTML]{003366}\textbf{Languages:}  
+\color[HTML]{000000} \hspace*{1.4ex} 
+Telugu (Native), Hindi (Fluent), English (Professional Proficiency) \\[3pt]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\vspace{-0.5cm}
+%Experience
+
+
+
+
+
+\section{Experience}
+\vspace{2pt}
+
+\begin{tabularx}{\linewidth}{@{}l r@{}}
+
+\color[HTML]{003366} \textbf{\uline{Software Engineer}} \hfill \color[HTML]{000000} May 2025 -- Present \\
+\color[HTML]{000000} MountBlue Pvt. Ltd. \\[2pt]
+
+\color[HTML]{000000} \textit{Client: Docyt India Pvt. Ltd. | Full Stack Developer} \hfill \color[HTML]{000000} August 2025 -- March 2026 \\[4pt]
+
+\begin{minipage}[t]{\linewidth}
+\begin{itemize}
+
+\item Worked on backend services using \textbf{Ruby on Rails} and \textbf{Spring Boot} for financial data processing systems.
+
+\item Contributed to building and improving integrations to fetch and process revenue data from multiple Property Management Systems (PMS).
+
+\item Built frontend pages and features using \textbf{React.js} based on revenue data.
+
+\item Worked on the Budget \& Forecast feature using Spring Boot, which is used for core financial reports.
+
+\item Automated and managed data workflows using \textbf{Apache Airflow} to improve pipeline reliability and efficiency.
+
+\item Collaborated with cross-functional teams to deliver scalable and production-ready solutions.
+
+\end{itemize}
+\end{minipage}
+\\[10pt]
+\vspace{2pt}
+\color[HTML]{003366} \textbf{\uline{Freelance Full Stack Developer}} \href{https://pranathi.flynexussolutions.com/}{\textbf{ | pranathi.flynexussolutions.com}} \hfill \color[HTML]{000000} February 2025 -- March 2025 \\ 
+\color[HTML]{000000} \textit{Pay Bill / Invoice Management System} \\[4pt]
+
+\begin{minipage}[t]{\linewidth}
+\begin{itemize}
+    \item Developed a full-stack invoice tracking and billing system for a client, enabling efficient payment and record management.
+    \item Improved application performance by \textbf{50\%} and optimized query efficiency by \textbf{30\%} using TanStack Query (\texttt{useQuery}).
+    \item Built responsive UI using \textbf{React.js} and \textbf{Material UI}.
+    \item Developed backend APIs using \textbf{Node.js}, \textbf{Express.js}, and \textbf{MySQL}.
+\end{itemize}
+\end{minipage}
+
+\end{tabularx}
+
+
+
+
+
+
+
+
+
+
+
+\section{Projects}
+\vspace{2pt}
+
+\begin{tabularx}{\linewidth}{@{}l r@{}}
+\color[HTML]{003366} \textbf{\uline{RAG Application}}\href{https://rag-web-lilac.vercel.app/}{\textbf{ | (rag-web-lilac.vercel.app)}} \hfill \color[HTML]{000000} March 2026 \\[2pt]
+\color[HTML]{003366}\textbf{\textit{Multi-modal Retrieval-Augmented Generation Platform}} \\[3pt]
+\begin{minipage}[t]{\linewidth}
+\begin{itemize}
+\item Built a multi-modal RAG system where users can upload PDFs, images, audio, and video, and ask questions. Each user can have multiple chats, and each chat keeps its own context without mixing with others.
+    \item Implemented context-aware retrieval using \textbf{ChromaDB} and improved results using \textbf{Jina AI} reranking, so the model only sees relevant information before answering.
+    \item Integrated \textbf{Gemini} for response generation, \textbf{Deepgram} for speech-to-text, and used \textbf{Docling} for structured document parsing to improve data extraction.
+    \item Added topic-based querying feature, allowing users to ask general domain questions even without uploaded documents.
+\end{itemize}
+\end{minipage}
+\end{tabularx}
+
+\vspace{6pt}
+
+\begin{tabularx}{\linewidth}{@{}l r@{}}
+\color[HTML]{003366} \textbf{\uline{Reddit Clone}}\href{https://reddit-b2lb.onrender.com}{\textbf{ | (Live Demo - Render)}} \hfill \color[HTML]{000000} July 2025 \\[2pt]
+\color[HTML]{003366}\textbf{\textit{Reddit-inspired Web Application}} \\[3pt]
+\begin{minipage}[t]{\linewidth}
+\begin{itemize}
+    \item Built a Reddit-like platform with features like post creation, communities, likes/dislikes, and nested comments.
+    \item Implemented fast and flexible search using PostgreSQL \textbf{pg\_trgm} with \textbf{GIN indexes} for fuzzy keyword matching.
+    \item Optimized image handling using \textbf{Thumbnailator} for compression and resizing, improving load time and performance.
+    \item Developed backend using Spring Boot and implemented server-side rendering using JSP and Thymeleaf. Deployed the application on Render.
+\end{itemize}
+\end{minipage}
+\end{tabularx}
+
+\vspace{6pt}
+
+\begin{tabularx}{\linewidth}{@{}l r@{}}
+\color[HTML]{003366} \textbf{\uline{Online Coding Platform}}\href{https://github.com/Kotamsettideepak/OnlineCodingPaltform}{\textbf{ | (GitHub)}} \hfill \color[HTML]{000000} July 2024 - August 2024 \\[2pt]
+\color[HTML]{003366}\textbf{\textit{User Friendly Coding Platform}} \\[3pt]
+\begin{minipage}[t]{\linewidth}
+\begin{itemize}
+    \item Built “Code Hunters” coding platform with modes like Arena, Playground, and Battle Ground to practice and compete.
+    \item Developed a complete admin panel with full CRUD operations to manage problems, users, and platform data.
+    \item Improved code execution performance by using Node.js \texttt{child\_process} for running user code efficiently.
+    \item Built using React.js, Material UI, Node.js, Express.js, and MongoDB.
+\end{itemize}
+\end{minipage}
+\end{tabularx}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Internships}
+
+
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{\uline{{SSI IT Education}}}(\color[HTML]{003366}\textbf{\textit{Assistant Instructor}}) \hfill \color[HTML]{000000} June 2023 - July 2023 \\[4pt] 
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+ \item \textbf{Instructed} Java concepts to 30+ students, contributing to a 95\% course completion rate through personalized support and hands-on teaching.
+    \item \textbf{Designed \& implemented} Java CLI projects (To-Do List, Video Rental System), applying data structures to \textbf{optimize} logic and performance.
+
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+
+
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{\uline{{Campalin Innovation}}} (\color[HTML]{003366}\textbf{\textit{Online Internship}}) \hfill \color[HTML]{000000} March 2023 - April 2023 \\[4pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+ \item \textbf{Designed} 3 static, responsive websites using HTML, CSS, Bootstrap, and JavaScript — boosting user engagement by 15\%.
+    \item \textbf{Led} capstone projects, promoting collaboration and implementing team strategies that increased productivity by 10\%.
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+
+
+
+
+
+
+
+\section{Certificates}
+\vspace{2pt}
+\begin{minipage}{0.5\textwidth}
+    \begin{itemize}
+        \item IT Specialist - Python
+        \item IT Specialist - HTML \& CSS
+        \item IT Specialist - JavaScript
+    \end{itemize}
+\end{minipage}%
+\begin{minipage}{0.5\textwidth}
+    \begin{itemize}
+        \item Tally Academy - Java
+        \item CodeChef - Advanced Java
+    \end{itemize}
+\end{minipage}
+
+
+
+
+
+
+\section{Cultural Activities}
+\begin{itemize}
+\vspace{0.3cm}
+ \item \textbf{Volunteered} at \textbf{Code Engine}, introducing 250+ juniors to the fundamentals of coding, career opportunities, and top online practice platforms. \href{https://www.linkedin.com/posts/deepak-k-827a2b253_codeengine-technicalhub-owlcoder-activity-7181014372054413312-2Kv7?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD6fWN8BH8h7GXe_rgB6yNfV8T8FM8Nsyy4}{\textbf{[LinkedIn Post]}}
+    
+    \item \textbf{Volunteered} at \textbf{T-Connect}, mentoring 200+ students on the roadmap to Full-Stack Development, project ideation, and writing clean, maintainable code.
+
+\end{itemize}
+
+
+\end{document}
